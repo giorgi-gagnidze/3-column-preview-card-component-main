@@ -4,8 +4,134 @@
   box-sizing: border-box;
 }
 
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+}
+
 body {
+  min-height: 100vh;
   background-color: hsl(0, 0%, 95%);
   font-family: Lexend Deca;
   font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__container {
+  display: flex;
+  max-width: 700px;
+}
+
+.orange__container {
+  max-width: 300px;
+  background-color: var(--orange);
+  padding: 40px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.cyan__container {
+  max-width: 300px;
+  background-color: var(--cyan);
+  padding: 40px;
+}
+
+.dark-cyan__container {
+  max-width: 300px;
+  background-color: var(--dark-cyan);
+  padding: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.article__container {
+  /* border: 1px solid black; */
+  height: 70%;
+  padding-bottom: 40px;
+}
+
+.main__heading {
+  font-family: Big Shoulders Display;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.main__article {
+  font-size: 12px;
+  color: white;
+  padding: 25px 0;
+  line-height: 20px;
+}
+
+.icon__container {
+  padding-bottom: 25px;
+}
+
+.btn__container {
+  display: flex;
+  /* border: 1px solid black; */
+}
+
+.main__btn {
+  height: 35px;
+  width: 110px;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  font-family: Lexend Deca;
+  font-size: 12px;
+}
+
+.orange__btn {
+  color: var(--orange);
+}
+
+.cyan__btn {
+  color: var(--cyan);
+}
+
+.dark-cyan__btn {
+  color: var(--dark-cyan);
+}
+
+.orange__btn:hover {
+  color: white;
+  background-color: var(--orange);
+  border: 1px solid white;
+}
+
+.cyan__btn:hover {
+  color: white;
+  background-color: var(--cyan);
+  border: 1px solid white;
+}
+
+.dark-cyan__btn:hover {
+  color: white;
+  background-color: var(--dark-cyan);
+  border: 1px solid white;
+}
+
+@media only screen and (max-width: 500px) {
+  .main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 20px;
+  }
+
+  .orange__container {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+
+  .dark-cyan__container {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
 }

@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
   background-color: hsl(0, 0%, 95%);
   font-family: Lexend Deca;
-  font-size: 15px;
+  font-size: 0.9375rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,68 +22,68 @@ body {
 
 .main__container {
   display: flex;
-  max-width: 700px;
+  max-width: 43.75rem;
 }
 
 .orange__container {
-  max-width: 300px;
+  max-width: 18.75rem;
   background-color: var(--orange);
-  padding: 40px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  padding: 2.5rem;
+  border-top-left-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
 }
 
 .cyan__container {
-  max-width: 300px;
+  max-width: 18.75rem;
   background-color: var(--cyan);
-  padding: 40px;
+  padding: 2.5rem;
 }
 
 .dark-cyan__container {
-  max-width: 300px;
+  max-width: 18.75rem;
   background-color: var(--dark-cyan);
-  padding: 40px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  padding: 2.5rem;
+  border-top-right-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
 }
 
 .article__container {
-  /* border: 1px solid black; */
+  /* border: 0.0625rem solid black; */
   height: 70%;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
 }
 
 .main__heading {
   font-family: Big Shoulders Display;
   color: white;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .main__article {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: white;
-  padding: 25px 0;
-  line-height: 20px;
+  padding: 1.5625rem 0;
+  line-height: 1.25rem;
 }
 
 .icon__container {
-  padding-bottom: 25px;
+  padding-bottom: 1.5625rem;
 }
 
 .btn__container {
   display: flex;
-  /* border: 1px solid black; */
+  /* border: 0.0625rem solid black; */
 }
 
 .main__btn {
-  height: 35px;
-  width: 110px;
+  height: 2.1875rem;
+  width: 6.875rem;
   border: none;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   background-color: white;
   font-family: Lexend Deca;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .orange__btn {
@@ -101,37 +101,37 @@ body {
 .orange__btn:hover {
   color: white;
   background-color: var(--orange);
-  border: 1px solid white;
+  border: 0.0625rem solid white;
 }
 
 .cyan__btn:hover {
   color: white;
   background-color: var(--cyan);
-  border: 1px solid white;
+  border: 0.0625rem solid white;
 }
 
 .dark-cyan__btn:hover {
   color: white;
   background-color: var(--dark-cyan);
-  border: 1px solid white;
+  border: 0.0625rem solid white;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 31.25rem) {
   .main__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 60px 20px;
+    margin: 3.75rem 1.25rem;
   }
 
   .orange__container {
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 0.625rem;
   }
 
   .dark-cyan__container {
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
   }
 }
